@@ -1,5 +1,6 @@
 {
   "version": "0.1.0",
+  "description": "Renderer for Al-engine, minimalistic game engine, for pixel perfect games",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -17,7 +18,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "prettier": "prettier {src,test}/*.ts --write"
   },
   "peerDependencies": {},
   "husky": {
@@ -31,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "render",
+  "name": "@al-engine/render",
   "author": "zhesha",
   "module": "dist/render.esm.js",
   "size-limit": [
@@ -53,6 +55,6 @@
     "typescript": "^4.0.5"
   },
   "dependencies": {
-    "core": "file:../core"
+    "@al-engine/core": "^0.2.0"
   }
 }
